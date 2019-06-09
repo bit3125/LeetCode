@@ -1,7 +1,5 @@
 package round1;
 
-import sun.security.x509.AVA;
-
 public class Q289GameofLife_deprecated {
 
     public void gameOfLife(int[][] board) {

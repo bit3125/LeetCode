@@ -32,7 +32,6 @@
 
   =>使用dp[i][j]，表示前i个数的某种和取到j值的某种量
 
-  ​
 
 
 ### Array
@@ -83,22 +82,22 @@
 
 ### LinkedList
 
-| No   | Title                                    | Difficulty | Completed | Comment                                  |
-| ---- | ---------------------------------------- | ---------- | --------- | ---------------------------------------- |
-| 206  | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy       | √         |                                          |
-| 141  | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy       | √         |                                          |
-| 19   | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) |            | √         |                                          |
-| 2    | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Easy       | √         |                                          |
-| 160  | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | Easy       | √         |                                          |
-| 21   | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy       | √         |                                          |
-| 234  | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | Easy       | √         |                                          |
-| 142  | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) |            | √         |                                          |
-| 148  | [Sort List](https://leetcode.com/problems/sort-list) |            | √`        |                                          |
-| 23   | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard       | √         |                                          |
-| 237  | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy       | √         | 剑指offer原题，不使用prev删除链表节点                  |
-| 328  | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) |            | √         | 拆链                                       |
-| 138  | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) |            | √         | 剑指offer原题。本Epoch进步在将俩操作解耦出来模块化了（见代码）这样指针操作不容易出错，一个bug过 |
-|      |                                          |            |           |                                          |
+| No   | Title                                                        | Difficulty | Completed | Completed-R2 | Comment                                                      |
+| ---- | ------------------------------------------------------------ | ---------- | --------- | ------------ | ------------------------------------------------------------ |
+| 206  | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy       | √         | √            |                                                              |
+| 141  | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy       | √         | √            |                                                              |
+| 19   | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) |            | √         | √            |                                                              |
+| 2    | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) |            | √         | √            |                                                              |
+| 160  | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | Easy       | √         | √            |                                                              |
+| 21   | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy       | √         | √            |                                                              |
+| 234  | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | Easy       | √         | √            |                                                              |
+| 142  | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) |            | √         | √            |                                                              |
+| 148  | [Sort List](https://leetcode.com/problems/sort-list)         |            | √`        | √            |                                                              |
+| 23   | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard       | √         | √            |                                                              |
+| 237  | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy       | √         | √            | 剑指offer原题，不使用prev删除链表节点                        |
+| 328  | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) |            | √         | √            | 拆链                                                         |
+| 138  | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) |            | √         | √            | 剑指offer原题。本Epoch进步在将俩操作解耦出来模块化了（见代码）这样指针操作不容易出错，一个bug过 |
+|      |                                                              |            |           |              |                                                              |
 
 
 ### Stack & PriorityQueue
@@ -119,29 +118,29 @@
 
 ### String
 
-| No          | Title                                    | Difficulty | Completed | Comment                     |
-| ----------- | ---------------------------------------- | ---------- | --------- | --------------------------- |
-| 49          | [Group Anagrams](https://leetcode.com/problems/group-anagrams) |            | √         | Solution3使用Hash的思想值得好好借鉴    |
-| 344         | [Reverse String](https://leetcode.com/problems/reverse-string) |            | √         | 剑指offer原题                   |
-| 387         | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) |            | √         | 剑指offer原题                   |
-| 38          | [Count and Say](https://leetcode.com/problems/count-and-say) | Easy       | √         |                             |
-| 179         | [Largest Number](https://leetcode.com/problems/largest-number) |            | √         | 剑指offer原题                   |
-| 28          | [Implement strStr()](https://leetcode.com/problems/implement-strstr) | Easy       | √         | 单模式串匹配，KMP                  |
-| 242         | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy       | √         |                             |
-| 171         | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number) | Easy       | √         |                             |
-| Substring   |                                          |            |           |                             |
-| 76          | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard       | //TODO    |                             |
-| 3           | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) |            | √         |                             |
-| 395         | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters) |            | √, √`     | //TODO On的解还没看噢，在discussion |
-|             |                                          |            |           |                             |
-|             |                                          |            |           |                             |
-| Palindrome  |                                          |            |           |                             |
-| 5           | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) |            | √`        |                             |
-| Parentheses |                                          |            |           |                             |
-| 20          | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy       | √         |                             |
-| 22          | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) |            | √         |                             |
-| 32          | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | Hard       | √ , √`    | DP解自己写出，栈解看后写               |
-| 301         | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses) | Hard       | TODO      | 确实有点难度，先搁着                  |
+| No          | Title                                                        | Difficulty | Completed | Completed-R2 | Comment                             |
+| ----------- | ------------------------------------------------------------ | ---------- | --------- | ------------ | ----------------------------------- |
+| 49          | [Group Anagrams](https://leetcode.com/problems/group-anagrams) |            | √         | √            | Solution3使用Hash的思想值得好好借鉴 |
+| 344         | [Reverse String](https://leetcode.com/problems/reverse-string) |            | √         | √            | 剑指offer原题                       |
+| 387         | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) | Easy       | √         | √            | 剑指offer原题                       |
+| 38          | [Count and Say](https://leetcode.com/problems/count-and-say) | Easy       | √         | 不做         |                                     |
+| 179         | [Largest Number](https://leetcode.com/problems/largest-number) |            | √         | √            | 剑指offer原题                       |
+| 28          | [Implement strStr()](https://leetcode.com/problems/implement-strstr) | Easy       | √         | 不做         | 单模式串匹配，KMP                   |
+| 242         | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy       | √         | 不做         |                                     |
+| 171         | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number) | Easy       | √         | 不做         |                                     |
+| Substring   |                                                              |            |           |              |                                     |
+| 76          | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard       | //TODO    |              |                                     |
+| 3           | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) |            | √         |              |                                     |
+| 395         | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters) |            | √, √`     |              | //TODO On的解还没看噢，在discussion |
+|             |                                                              |            |           |              |                                     |
+|             |                                                              |            |           |              |                                     |
+| Palindrome  |                                                              |            |           |              |                                     |
+| 5           | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) |            | √`        | √            |                                     |
+| Parentheses |                                                              |            |           |              |                                     |
+| 20          | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy       | √         |              |                                     |
+| 22          | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) |            | √         |              |                                     |
+| 32          | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | Hard       | √ , √`    |              | DP解自己写出，栈解看后写            |
+| 301         | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses) | Hard       | TODO      |              | 确实有点难度，先搁着                |
 
 
 
@@ -164,28 +163,28 @@
 
 ### Tree
 
-| No         | Title                                    | Difficulty | Completed | Comment                                  |
-| ---------- | ---------------------------------------- | ---------- | --------- | ---------------------------------------- |
-| 94         | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) |            | √         |                                          |
-|            |                                          |            |           |                                          |
-| 101        | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | Easy       | √         |                                          |
-| 226        | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree) | Easy       | √         |                                          |
-| 104        | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Easy       | √         |                                          |
-| 124        | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard       | √         | 树形动规                                     |
-| 337        | [House Robber III](https://leetcode.com/problems/house-robber-iii) |            | √         |                                          |
-| 236        | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) |            | √         | 各种debug了超久。。结果还不是最简解。。好好看看               |
-| 297        | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard       | √         | offer原题                                  |
-| 114        | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) |            | √         | 上面说很少考？跟那题变二叉树为双向链表的几乎一毛一样（好像是offer上的）   |
-| 105        | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) |            | √         | 上面说很少考？                                  |
-| 96         | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) |            | √`        | 本质是DP                                    |
-| BST        |                                          |            |           |                                          |
-| 230        | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst) |            | √         | BST的中序遍历                                 |
-| 108        | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | Easy       | √         | 二分搜索构建AVL                                |
-| LevelOrder |                                          |            |           |                                          |
-| 102        | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) |            | √         |                                          |
-| 103        | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) |            | √         | 剑指offer原题。关键点：  1.两个栈交替；2.奇偶层区分左右树的push顺序 |
-| 116        | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) |            | √, √`     | Sn=O1的层序遍历                               |
-|            |                                          |            |           |                                          |
+| No         | Title                                    | Difficulty | Completed | Completed-R2 | Comment                                  |
+| ---------- | ---------------------------------------- | ---------- | --------- | ------------ | ---------------------------------------- |
+| 94         | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) |            | √         | √            |                                          |
+|            |                                          |            |           |              |                                          |
+| 101        | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | Easy       | √         | √            |                                          |
+| 226        | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree) | Easy       | √         | √            |                                          |
+| 104        | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Easy       | √         | √            |                                          |
+| 124        | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard       | √         |              | 树形动规                                     |
+| 337        | [House Robber III](https://leetcode.com/problems/house-robber-iii) |            | √         | √            |                                          |
+| 236        | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) |            | √         | √            | 各种debug了超久。。结果还不是最简解。。好好看看               |
+| 297        | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard       | √         | √            | offer原题                                  |
+| 114        | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) |            | √         | √            | 上面说很少考？跟那题变二叉树为双向链表的几乎一毛一样（好像是offer上的）   |
+| 105        | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) |            | √         |              | 上面说很少考？                                  |
+| 96         | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) |            | √`        | √            | 本质是DP                                    |
+| BST        |                                          |            |           |              |                                          |
+| 230        | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst) |            | √         | √            | BST的中序遍历                                 |
+| 108        | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | Easy       | √         | √            | 二分搜索构建AVL                                |
+| LevelOrder |                                          |            |           |              |                                          |
+| 102        | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) |            | √         | √            |                                          |
+| 103        | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) |            | √         | √            | 剑指offer原题。关键点：  1.两个栈交替；2.奇偶层区分左右树的push顺序 |
+| 116        | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) |            | √, √`     | √            | Sn=O1的层序遍历<br>round2之时直接写出了一种新的Sn=O1的算法  |
+|            |                                          |            |           |              |                                          |
 
 
 
