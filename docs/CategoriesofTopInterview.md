@@ -63,7 +63,7 @@
 | 283      | [Move Zeroes](https://leetcode.com/problems/move-zeroes) |            | √         | HashSort                                 |
 | 88       | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) |            | √         | 剑指offer原题。注意题目给的条件必有其用                   |
 | 324      | [Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii) |            | √`        | 感觉比些Hard还难。写了3个Solutions，重要一个技巧点是：上下分层模型+填充方向，3个Solutions都基于此。最佳解法为QuickSelect+3Partition+VirtualIndex（公式只能死记）。 |
-| 315      | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | Hard       | √         | 类似于Reverse Pairs，使用merge sort 的思想。这里自己使用了一个int[3]结构来重构数据，完成后要做一次快排。discussion里有使用idx mapping技术的，可以看一下 |
+| 315      | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | Hard       | √         | 类似于Reverse Pairs，使用merge others.sort 的思想。这里自己使用了一个int[3]结构来重构数据，完成后要做一次快排。discussion里有使用idx mapping技术的，可以看一下 |
 
 
 

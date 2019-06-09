@@ -1,3 +1,5 @@
 /bin/
 .idea/
 .settings/
+LeetCode.iml
+.DS_Store

@@ -13,26 +13,23 @@
 | 461  | [Hamming Distance](https://leetcode.com/problems/hamming-distance) |            | √         | Bit Manipulation                         |
 | 560  | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) |            | √, √`     | 自己想到了preSum On^2，看完hint后使用了TwoSum的HashMap进行优化 On |
 | 494  | [Target Sum](https://leetcode.com/problems/target-sum) |            | √         | 2d-DP，与剑指offer掷骰子可比较。本题很典型，多看自己写的算法分析    |
-|      |                                          |            |           |                                          |
-|      |                                          |            |           |                                          |
-|      |                                          |            |           |                                          |
-|      |                                          |            |           |                                          |
+| 169  | [Majority Element](https://leetcode.com/problems/majority-element) | Easy       | √         | 剑指offer原题，摩尔投票算法：找寻数组中占比超过1/k的数          |
+| 416  | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) |            | √         | 2d-DP，用的是类似于494的方法！这类取值题型太典型了好好看。顺带一提最终通过改变DP方向把Sn优化到一个boolean[n]的思想好好揣摩 |
+| 237  | [Delete Node in a Linked Lis](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy       | √         | 剑指offer原题，不使用prev删除链表指定节点                |
+| 230  | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst) |            | √         |                                          |
 
 
 
 ### Summary
 
-- 掷骰子DP
+#### 掷骰子DP
 
-  以后看到两种特点可以考虑使用类骰子DP：
+以后看到两种特点可以考虑使用类骰子DP：
+1.求数组中各种取值的组合，复杂度达到O(2^n)的
+2.给出数组中每个数的取值上限，甚至给出数组长度上限的，90%是要用这个方法了
+=>使用dp[i][j]，表示前i个数的某种和取到j值的某种量
 
-  1.求数组中各种取值的组合，复杂度达到O(2^n)的
 
-  2.给出数组中每个数的取值上限，甚至给出数组长度上限的，90%是要用这个方法了
-
-  =>使用dp[i][j]，表示前i个数的某种和取到j值的某种量
-
-  ​
 
 
 ### Array
@@ -250,7 +247,7 @@ None
 
 ### Design
 
-| No   | Title                                    | Difficulty | Completed | Comment |
-| ---- | ---------------------------------------- | ---------- | --------- | ------- |
-| 146  | [LRU Cache](https://leetcode.com/problems/lru-cache) | Hard       |           |         |
-|      |                                          |            |           |         |
+| No   | Title                                    | Difficulty | Completed | Comment                  |
+| ---- | ---------------------------------------- | ---------- | --------- | ------------------------ |
+| 146  | [LRU Cache](https://leetcode.com/problems/lru-cache) | Hard       | √`        | 双向链表+HashMap。高频且bug多，好好看 |
+|      |                                          |            |           |                          |
