@@ -130,7 +130,7 @@
 | 171         | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number) | Easy       | √         | 不做         |                                     |
 | Substring   |                                                              |            |           |              |                                     |
 | 76          | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard       | //TODO    |              |                                     |
-| 3           | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) |            | √         |              |                                     |
+| 3           | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) |            | √         | √            |                                     |
 | 395         | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters) |            | √, √`     |              | //TODO On的解还没看噢，在discussion |
 |             |                                                              |            |           |              |                                     |
 |             |                                                              |            |           |              |                                     |
@@ -141,6 +141,8 @@
 | 22          | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) |            | √         |              |                                     |
 | 32          | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | Hard       | √ , √`    |              | DP解自己写出，栈解看后写            |
 | 301         | [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses) | Hard       | TODO      |              | 确实有点难度，先搁着                |
+
+Q003 Longest Substring Without Repeating Characters 与 Q005 Longest Palindromic Substring 可以好好对着看一下，都是dp但是分别使用了一维与二维的状态定义，用dp分别达到的效果：On^3 -> On, On^3 -> On^2
 
 
 
@@ -220,23 +222,27 @@ None
 
 ### Backtracking (与其叫回溯不如叫排列。。。)
 
-| No          | Title                                    | Difficulty | Completed | Comment                                  |
-| ----------- | ---------------------------------------- | ---------- | --------- | ---------------------------------------- |
-| 78          | [Subsets](https://leetcode.com/problems/subsets) |            | √         | 组合，使用boolean标记数组，无回溯。                    |
-| 39          | [Combination Sum](https://leetcode.com/problems/combination-sum) |            | √         | 无回溯。但是应该可用                               |
-| 46          | [Permutations](https://leetcode.com/problems/permutations) |            | √         |                                          |
-| 31          | [Next Permutation](https://leetcode.com/problems/next-permutation) |            | √         | 无回溯。                                     |
-| 79          | [Word Search](https://leetcode.com/problems/word-search) |            | √         | 本质是backtracking-DFS。几乎两年没写了20min一遍过，太强了（啪啪啪） |
-| 131         | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) |            | √         | 回文串2d-DP(Q005)+枚举搜索backtracking          |
-|             |                                          |            |           |                                          |
-|             |                                          |            |           |                                          |
-|             |                                          |            |           |                                          |
-| Enumeration |                                          |            |           |                                          |
-| 17          | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) |            | √         | 无回溯。                                     |
-|             |                                          |            |           |                                          |
-|             |                                          |            |           |                                          |
+| No          | Title                                                        | Difficulty | Completed | Completed-R2 | Comment                                                      | Comment-R2                                                   |
+| ----------- | ------------------------------------------------------------ | ---------- | --------- | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 78          | [Subsets](https://leetcode.com/problems/subsets)             |            | √         | √            | 组合，使用boolean标记数组，无回溯。                          |                                                              |
+| 39          | [Combination Sum](https://leetcode.com/problems/combination-sum) |            | √         | √            | 无回溯。但是应该可用。r1在递归调用的基础上使用for来辅助穷举，一定程度上对递归栈深度剪枝 | r2使用的是类似状态机的搜索算法，用了backtracking，没有使用r1中的for来辅助，但时间开销近似 |
+| 46          | [Permutations](https://leetcode.com/problems/permutations)   |            | √         | √            |                                                              |                                                              |
+| 31          | [Next Permutation](https://leetcode.com/problems/next-permutation) |            | √         |              | 无回溯。                                                     |                                                              |
+| 79          | [Word Search](https://leetcode.com/problems/word-search)     |            | √         | √            | 本质是backtracking-DFS。几乎两年没写了20min一遍过，太强了（啪啪啪） |                                                              |
+| 131         | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) |            | √         |              | 回文串2d-DP(Q005)+枚举搜索backtracking                       |                                                              |
+|             |                                                              |            |           |              |                                                              |                                                              |
+|             |                                                              |            |           |              |                                                              |                                                              |
+|             |                                                              |            |           |              |                                                              |                                                              |
+| Enumeration |                                                              |            |           |              |                                                              |                                                              |
+| 17          | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) |            | √         |              | 无回溯。                                                     |                                                              |
+|             |                                                              |            |           |              |                                                              |                                                              |
+|             |                                                              |            |           |              |                                                              |                                                              |
 
 注：79题被大佬错分到Matrix，明明是Backtracking 才对
+
+Q39 Combination Sum 的r1 r2 两种解法可以多琢磨琢磨
+
+
 
 
 
