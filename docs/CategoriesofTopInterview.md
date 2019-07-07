@@ -1,4 +1,6 @@
-@author	lee
+  f 
+
+​      `1234567890765432@author	lee
 
 ### Others
 
@@ -229,13 +231,10 @@ None
 | 46          | [Permutations](https://leetcode.com/problems/permutations)   |            | √         | √            |                                                              |                                                              |
 | 31          | [Next Permutation](https://leetcode.com/problems/next-permutation) |            | √         |              | 无回溯。                                                     |                                                              |
 | 79          | [Word Search](https://leetcode.com/problems/word-search)     |            | √         | √            | 本质是backtracking-DFS。几乎两年没写了20min一遍过，太强了（啪啪啪） |                                                              |
-| 131         | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) |            | √         |              | 回文串2d-DP(Q005)+枚举搜索backtracking                       |                                                              |
-|             |                                                              |            |           |              |                                                              |                                                              |
-|             |                                                              |            |           |              |                                                              |                                                              |
+| 131         | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) |            | √         | √            | 回文串2d-DP(Q005)+枚举搜索backtracking                       |                                                              |
 |             |                                                              |            |           |              |                                                              |                                                              |
 | Enumeration |                                                              |            |           |              |                                                              |                                                              |
-| 17          | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) |            | √         |              | 无回溯。                                                     |                                                              |
-|             |                                                              |            |           |              |                                                              |                                                              |
+| 17          | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) |            | √         | 不做         | 无回溯。                                                     |                                                              |
 |             |                                                              |            |           |              |                                                              |                                                              |
 
 注：79题被大佬错分到Matrix，明明是Backtracking 才对
@@ -248,32 +247,32 @@ Q39 Combination Sum 的r1 r2 两种解法可以多琢磨琢磨
 
 ### Dynamic Programming
 
-| No   | Title                                    | Difficulty | Completed | Comment                                  |
-| ---- | ---------------------------------------- | ---------- | --------- | ---------------------------------------- |
-| 一维   |                                          |            |           |                                          |
-| 70   | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | Easy       | √         |                                          |
-| 62   | [Unique Paths](https://leetcode.com/problems/unique-paths) |            | √         |                                          |
-| 279  | [Perfect Squares](https://leetcode.com/problems/perfect-squares) |            | √         | On^2非最优                                  |
-| 139  | [Word Break](https://leetcode.com/problems/word-break) |            | √`        | 穷举与DP复杂度一样结果前者TLE后者AC                    |
-| 312  | [Burst Balloons](https://leetcode.com/problems/burst-balloons) | Hard       |           |                                          |
-| 322  | [Coin Change](https://leetcode.com/problems/coin-change) |            | √         | 贪心递归（与Q39同法）是错误的，该用完全背包（目标钱数就是恰好容量，求最小价值） |
-|      |                                          |            |           |                                          |
-| 二维   |                                          |            |           |                                          |
-| 64   | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) |            | √         |                                          |
-| 72   | [Edit Distance](https://leetcode.com/problems/edit-distance) | Hard       | √`        | 比较典型的题型，DP方向从大到小会方便很多，边界条件是个难点           |
-| 221  | [Maximal Square](https://leetcode.com/problems/maximal-square) |            | √`        |                                          |
-| 85   | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle) | Hard       | TODO      |                                          |
-|      |                                          |            |           |                                          |
-| 化简   |                                          |            |           |                                          |
-| 198  | [House Robber](https://leetcode.com/problems/house-robber) | Easy       | √         |                                          |
-| 10   | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard       |           |                                          |
-| 91   | [Decode Ways](https://leetcode.com/problems/decode-ways) |            | √         | 边界挺麻烦的                                   |
-|      |                                          |            |           |                                          |
-| 其他   |                                          |            |           |                                          |
-| 121  | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) |            | √         |                                          |
-| 309  | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown) |            | ?         |                                          |
-| 152  | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) |            | √         |                                          |
-|      |                                          |            |           |                                          |
+| No   | Title                                                        | Difficulty | Completed | Completed-R2 | Comment                                                      |
+| ---- | ------------------------------------------------------------ | ---------- | --------- | ------------ | ------------------------------------------------------------ |
+| 一维 |                                                              |            |           |              |                                                              |
+| 70   | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | Easy       | √         | 不做         |                                                              |
+| 62   | [Unique Paths](https://leetcode.com/problems/unique-paths)   |            | √         | √            |                                                              |
+| 279  | [Perfect Squares](https://leetcode.com/problems/perfect-squares) |            | √         | √,           | On^2非最优                                                   |
+| 139  | [Word Break](https://leetcode.com/problems/word-break)       |            | √`        |              | 穷举与DP复杂度一样结果前者TLE后者AC                          |
+| 312  | [Burst Balloons](https://leetcode.com/problems/burst-balloons) | Hard       |           |              |                                                              |
+| 322  | [Coin Change](https://leetcode.com/problems/coin-change)     |            | √         |              | 贪心递归（与Q39同法）是错误的，该用完全背包（目标钱数就是恰好容量，求最小价值） |
+|      |                                                              |            |           |              |                                                              |
+| 二维 |                                                              |            |           |              |                                                              |
+| 64   | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) |            | √         |              |                                                              |
+| 72   | [Edit Distance](https://leetcode.com/problems/edit-distance) | Hard       | √`        |              | 比较典型的题型，DP方向从大到小会方便很多，边界条件是个难点   |
+| 221  | [Maximal Square](https://leetcode.com/problems/maximal-square) |            | √`        |              |                                                              |
+| 85   | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle) | Hard       | TODO      |              |                                                              |
+|      |                                                              |            |           |              |                                                              |
+| 化简 |                                                              |            |           |              |                                                              |
+| 198  | [House Robber](https://leetcode.com/problems/house-robber)   | Easy       | √         |              |                                                              |
+| 10   | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard       |           |              |                                                              |
+| 91   | [Decode Ways](https://leetcode.com/problems/decode-ways)     |            | √         |              | 边界挺麻烦的                                                 |
+|      |                                                              |            |           |              |                                                              |
+| 其他 |                                                              |            |           |              |                                                              |
+| 121  | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) |            | √         |              |                                                              |
+| 309  | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown) |            | ?         |              |                                                              |
+| 152  | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) |            | √         |              |                                                              |
+|      |                                                              |            |           |              |                                                              |
 
 注：53题被大佬错分到Array，明明是DP 才对- -。还有121,309,152也是
 

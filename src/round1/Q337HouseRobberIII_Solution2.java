@@ -9,7 +9,7 @@
  * 实际上基于递归也能写出相同复杂度的算法，将两组dp值合并在一起进行求解并return就行，
  * （return一个数组，在递归出口处return {0,0}而非solution1的0），本质上与Solution2是一毛一样的
  * ，这样的话由于没有重复求解的部分，复杂度与循环方法是相等的，而且使用的是递归的结构更简洁，
- * 这种算法见discussion Easy understanding solution with dfs
+ * 这种算法见discussion Easy understanding Solution with dfs
  * 
  * */
 

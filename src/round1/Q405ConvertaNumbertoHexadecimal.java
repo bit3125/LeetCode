@@ -24,7 +24,7 @@ public class Q405ConvertaNumbertoHexadecimal {
     	return result.toString();
     }
 	
-    /* best solution
+    /* best Solution
      * 用位运算是坠吼滴
      * 
      * */

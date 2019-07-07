@@ -1,5 +1,5 @@
 package round1;
-/**best solution
+/**best Solution
  * 等差数列求和
  * 
  * */
