@@ -104,17 +104,17 @@
 
 ### Stack & PriorityQueue
 
-| NO   | Title                                    | Difficulty | Completed | Comment                          |
-| ---- | ---------------------------------------- | ---------- | --------- | -------------------------------- |
-| 155  | [Min Stack](https://leetcode.com/problems/min-stack) | Easy       | √         |                                  |
-| 394  | [Decode String](https://leetcode.com/problems/decode-string) |            | √         | 这里我是之前用递归做的，并没有用栈                |
-| 84   | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | Hard       | √`        | 看完答案写出了类动规的方法，stack的解法边界条件还是处理不好 |
-| 215  | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) |            | √         | top-k问题皆可考虑使用heap窗口              |
-| 347  | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) |            | √         |                                  |
-| 150  | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) |            | √         | 比较简单的四则运算问题（难的是按照human形式输入）      |
-| 341  | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) |            | √`        | Medium活生生给我做成了Hard。。不过确实有trick   |
-|      |                                          |            |           |                                  |
-|      |                                          |            |           |                                  |
+| NO   | Title                                                        | Difficulty | Completed | Completed-R2 | Comment                                                     | Comment-R2       |
+| ---- | ------------------------------------------------------------ | ---------- | --------- | ------------ | ----------------------------------------------------------- | ---------------- |
+| 155  | [Min Stack](https://leetcode.com/problems/min-stack)         | Easy       | √         | √            |                                                             |                  |
+| 394  | [Decode String](https://leetcode.com/problems/decode-string) |            | √         | √            | 这里我是之前用递归做的，并没有用栈                          | 思路跟r1稍有差别 |
+| 84   | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | Hard       | √`        |              | 看完答案写出了类动规的方法，stack的解法边界条件还是处理不好 |                  |
+| 215  | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) |            | √         |              | top-k问题皆可考虑使用heap窗口                               |                  |
+| 347  | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) |            | √         |              |                                                             |                  |
+| 150  | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) |            | √         |              | 比较简单的四则运算问题（难的是按照human形式输入）           |                  |
+| 341  | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) |            | √`        |              | Medium活生生给我做成了Hard。。不过确实有trick               |                  |
+|      |                                                              |            |           |              |                                                             |                  |
+|      |                                                              |            |           |              |                                                             |                  |
 
 
 
@@ -131,7 +131,7 @@
 | 242         | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy       | √         | 不做         |                                     |
 | 171         | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number) | Easy       | √         | 不做         |                                     |
 | Substring   |                                                              |            |           |              |                                     |
-| 76          | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard       | //TODO    |              |                                     |
+| 76          | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Hard       | //TODO    | √            | 双游标法剪枝                        |
 | 3           | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) |            | √         | √            |                                     |
 | 395         | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters) |            | √, √`     |              | //TODO On的解还没看噢，在discussion |
 |             |                                                              |            |           |              |                                     |
@@ -151,17 +151,17 @@ Q003 Longest Substring Without Repeating Characters 与 Q005 Longest Palindromic
 ### Math
 
 
-| No   | Title                                    | Difficulty | Completed | Comment                   |
-| ---- | ---------------------------------------- | ---------- | --------- | ------------------------- |
-| 1    | [Two Sum](https://leetcode.com/problems/two-sum) |            | √`        | 好好看，多解，高频                 |
-| 15   | [3Sum](https://leetcode.com/problems/3sum) |            | √         | 也看下，似乎看了hint才写出来          |
-| 66   | [Plus One](https://leetcode.com/problems/plus-one) | Easy       | √         | 按位模拟加法                    |
-| 454  | [4Sum II](https://leetcode.com/problems/4sum-ii) |            | √         | 2Sum 3Sum 4Sum 都可以好好看看    |
-| 326  | [Power of Three](https://leetcode.com/problems/power-of-three) | Easy       | √         |                           |
-| 202  | [Happy Number](https://leetcode.com/problems/happy-number) | Easy       | √         | discuss有一个Sn=O1的类链表找环解法很妙 |
-| 166  | [Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal) |            | √`        | 使用HashMap存remainders      |
-| 204  | [Count Primes](https://leetcode.com/problems/count-primes) | Easy       | √         | 素数筛法                      |
-|      |                                          |            |           |                           |
+| No   | Title                                                        | Difficulty | Completed | Completed-R2 | Comment                                | Comment                |
+| ---- | ------------------------------------------------------------ | ---------- | --------- | ------------ | -------------------------------------- | ---------------------- |
+| 1    | [Two Sum](https://leetcode.com/problems/two-sum)             |            | √`        |              | 好好看，多解，高频                     |                        |
+| 15   | [3Sum](https://leetcode.com/problems/3sum)                   |            | √         |              | 也看下，似乎看了hint才写出来           |                        |
+| 66   | [Plus One](https://leetcode.com/problems/plus-one)           | Easy       | √         |              | 按位模拟加法                           |                        |
+| 454  | [4Sum II](https://leetcode.com/problems/4sum-ii)             |            | √         |              | 2Sum 3Sum 4Sum 都可以好好看看          |                        |
+| 326  | [Power of Three](https://leetcode.com/problems/power-of-three) | Easy       | √         | 不做         |                                        |                        |
+| 202  | [Happy Number](https://leetcode.com/problems/happy-number)   | Easy       | √         |              | discuss有一个Sn=O1的类链表找环解法很妙 |                        |
+| 166  | [Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal) |            | √`        | √            | 使用HashMap存remainders                | 很烦很繁琐，感觉没啥用 |
+| 204  | [Count Primes](https://leetcode.com/problems/count-primes)   | Easy       | √         |              | 素数筛法                               |                        |
+|      |                                                              |            |           |              |                                        |                        |
 
 
 
@@ -210,10 +210,10 @@ None
 
 ### DFS&BFS
 
-| No   | Title                                    | Difficulty | Completed | Comment         |
-| ---- | ---------------------------------------- | ---------- | --------- | --------------- |
-| 200  | [Number of Islands](https://leetcode.com/problems/number-of-islands) |            | √         | DFS计算连通分量数      |
-| 329  | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | Hard       | √         | DFS+cache剪枝，多看看 |
+| No   | Title                                                        | Difficulty | Completed | Completed-R2 | Comment               |
+| ---- | ------------------------------------------------------------ | ---------- | --------- | ------------ | --------------------- |
+| 200  | [Number of Islands](https://leetcode.com/problems/number-of-islands) |            | √         | 不做         | DFS计算连通分量数     |
+| 329  | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | Hard       | √         | √            | DFS+cache剪枝，多看看 |
 
 
 ### Graph
@@ -229,7 +229,7 @@ None
 | 78          | [Subsets](https://leetcode.com/problems/subsets)             |            | √         | √            | 组合，使用boolean标记数组，无回溯。                          |                                                              |
 | 39          | [Combination Sum](https://leetcode.com/problems/combination-sum) |            | √         | √            | 无回溯。但是应该可用。r1在递归调用的基础上使用for来辅助穷举，一定程度上对递归栈深度剪枝 | r2使用的是类似状态机的搜索算法，用了backtracking，没有使用r1中的for来辅助，但时间开销近似 |
 | 46          | [Permutations](https://leetcode.com/problems/permutations)   |            | √         | √            |                                                              |                                                              |
-| 31          | [Next Permutation](https://leetcode.com/problems/next-permutation) |            | √         |              | 无回溯。                                                     |                                                              |
+| 31          | [Next Permutation](https://leetcode.com/problems/next-permutation) |            | √         | TODO         | 无回溯。                                                     |                                                              |
 | 79          | [Word Search](https://leetcode.com/problems/word-search)     |            | √         | √            | 本质是backtracking-DFS。几乎两年没写了20min一遍过，太强了（啪啪啪） |                                                              |
 | 131         | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) |            | √         | √            | 回文串2d-DP(Q005)+枚举搜索backtracking                       |                                                              |
 |             |                                                              |            |           |              |                                                              |                                                              |
