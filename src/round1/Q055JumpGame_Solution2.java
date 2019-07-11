@@ -8,6 +8,8 @@
  * 每次更新farestIdx相当于对标记法中的boolean数组进行了一次O(n)的遍历标记
  * 故能把Tn优化到线性，就是因为省去了每次对boolean数组的遍历标记
  * farestIdx表示farestIdx往前的所有idx都是可达的
+ *
+ * R2标注：可用此法是因为本题特点，若i可达则i-1一定可达
  * */
 
 package round1;
