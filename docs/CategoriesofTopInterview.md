@@ -4,21 +4,21 @@
 
 ### Others
 
-| No   | Title                                    | Difficulty | Completed | Comment                                  |
-| ---- | ---------------------------------------- | ---------- | --------- | ---------------------------------------- |
-| 34   | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) |            | √         | BinarySearch                             |
-| 771  | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones) | Easy       | √         | Hash                                     |
-| 617  | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees) | Easy       | √         | BinaryTree                               |
-| 647  | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) |            | √         | 二维DP                                     |
-| 406  | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height) |            | √`        | Sort，分治法                                 |
-| 98   | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) |            | √         | Tree                                     |
-| 461  | [Hamming Distance](https://leetcode.com/problems/hamming-distance) |            | √         | Bit Manipulation                         |
-| 560  | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) |            | √, √`     | 自己想到了preSum On^2，看完hint后使用了TwoSum的HashMap进行优化 On |
-| 494  | [Target Sum](https://leetcode.com/problems/target-sum) |            | √         | 2d-DP，与剑指offer掷骰子可比较。本题很典型，多看自己写的算法分析    |
-|      |                                          |            |           |                                          |
-|      |                                          |            |           |                                          |
-|      |                                          |            |           |                                          |
-|      |                                          |            |           |                                          |
+| No   | Title                                    | Difficulty | Completed | Completed-R2 | Comment                                  |
+| ---- | ---------------------------------------- | ---------- | --------- | ------------ | ---------------------------------------- |
+| 34   | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) |            | √         |              | BinarySearch                             |
+| 771  | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones) | Easy       | √         |              | Hash                                     |
+| 617  | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees) | Easy       | √         |              | BinaryTree                               |
+| 647  | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings) |            | √         |              | 二维DP                                     |
+| 406  | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height) |            | √`        |              | Sort，分治法                                 |
+| 98   | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) |            | √         |              | Tree                                     |
+| 461  | [Hamming Distance](https://leetcode.com/problems/hamming-distance) |            | √         |              | Bit Manipulation                         |
+| 560  | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) |            | √, √`     |              | 自己想到了preSum On^2，看完hint后使用了TwoSum的HashMap进行优化 On |
+| 494  | [Target Sum](https://leetcode.com/problems/target-sum) |            | √         | √            | 2d-DP，与剑指offer掷骰子可比较。本题很典型，多看自己写的算法分析    |
+|      |                                          |            |           |              |                                          |
+|      |                                          |            |           |              |                                          |
+|      |                                          |            |           |              |                                          |
+|      |                                          |            |           |              |                                          |
 
 
 
@@ -52,17 +52,17 @@
 | 268      | [Missing Number](https://leetcode.com/problems/missing-number) | Easy       | √`        | √`           | 三种方法：SUM, Bit Manu, Binary Sort（有序时）。可以多看两眼 | num=range-1。<br> 关于位运算，使用的依然是异或的两个常用性质（与那道只有一个数出现一次其他出现两次的题一样 |
 |          |                                          |            |           |              |                                          |                                          |
 | Interval |                                          |            |           |              |                                          |                                          |
-| 56       | [Merge Intervals](https://leetcode.com/problems/merge-intervals) |            | √         |              |                                          |                                          |
+| 56       | [Merge Intervals](https://leetcode.com/problems/merge-intervals) |            | √         | √            |                                          |                                          |
 | 253      | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) |            |           |              | 付费                                       |                                          |
 | Counter  |                                          |            |           |              |                                          |                                          |
-| 239      | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard       | √         |              | 剑指offer原题。使用Deque实现                      |                                          |
+| 239      | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum) | Hard       | √         | √            | 剑指offer原题。使用Deque实现                      |                                          |
 | 238      | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) |            | √         |              |                                          |                                          |
-| 295      | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Hard       | √         |              | 剑指offer原题                                |                                          |
+| 295      | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream) | Hard       | √         | √            | 剑指offer原题                                | 中位数，TopK，数据流                             |
 |          |                                          |            |           |              |                                          |                                          |
 | Sort     |                                          |            |           |              |                                          |                                          |
-| 75       | [Sort Colors](https://leetcode.com/problems/sort-colors) |            | √         |              | HashSort/奇偶列首尾指针法                        |                                          |
-| 283      | [Move Zeroes](https://leetcode.com/problems/move-zeroes) |            | √         |              | HashSort                                 |                                          |
-| 88       | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) |            | √         |              | 剑指offer原题。注意题目给的条件必有其用                   |                                          |
+| 75       | [Sort Colors](https://leetcode.com/problems/sort-colors) |            | √         | √            | HashSort/奇偶列首尾指针法                        |                                          |
+| 283      | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy       | √         | √            | HashSort                                 |                                          |
+| 88       | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | Easy       | √         | 不做           | 剑指offer原题。注意题目给的条件必有其用                   |                                          |
 | 324      | [Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii) |            | √`        |              | 感觉比些Hard还难。写了3个Solutions，重要一个技巧点是：上下分层模型+填充方向，3个Solutions都基于此。最佳解法为QuickSelect+3Partition+VirtualIndex（公式只能死记）。 |                                          |
 | 315      | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | Hard       | √         |              | 类似于Reverse Pairs，使用merge others.sort 的思想。这里自己使用了一个int[3]结构来重构数据，完成后要做一次快排。discussion里有使用idx mapping技术的，可以看一下 |                                          |
 
@@ -104,17 +104,17 @@
 
 ### Stack & PriorityQueue
 
-| NO   | Title                                    | Difficulty | Completed | Completed-R2 | Comment                          | Comment-R2 |
-| ---- | ---------------------------------------- | ---------- | --------- | ------------ | -------------------------------- | ---------- |
-| 155  | [Min Stack](https://leetcode.com/problems/min-stack) | Easy       | √         | √            |                                  |            |
-| 394  | [Decode String](https://leetcode.com/problems/decode-string) |            | √         | √            | 这里我是之前用递归做的，并没有用栈                | 思路跟r1稍有差别  |
-| 84   | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | Hard       | √`        |              | 看完答案写出了类动规的方法，stack的解法边界条件还是处理不好 |            |
-| 215  | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) |            | √         |              | top-k问题皆可考虑使用heap窗口              |            |
-| 347  | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) |            | √         | √            |                                  |            |
-| 150  | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) |            | √         |              | 比较简单的四则运算问题（难的是按照human形式输入）      |            |
-| 341  | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) |            | √`        |              | Medium活生生给我做成了Hard。。不过确实有trick   |            |
-|      |                                          |            |           |              |                                  |            |
-|      |                                          |            |           |              |                                  |            |
+| NO   | Title                                    | Difficulty | Completed | Completed-R2 | Comment                          | Comment-R2                               |
+| ---- | ---------------------------------------- | ---------- | --------- | ------------ | -------------------------------- | ---------------------------------------- |
+| 155  | [Min Stack](https://leetcode.com/problems/min-stack) | Easy       | √         | √            |                                  |                                          |
+| 394  | [Decode String](https://leetcode.com/problems/decode-string) |            | √         | √            | 这里我是之前用递归做的，并没有用栈                | 思路跟r1稍有差别                                |
+| 84   | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | Hard       | √`        |              | 看完答案写出了类动规的方法，stack的解法边界条件还是处理不好 |                                          |
+| 215  | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) |            | √         | √            | top-k问题皆可考虑使用heap窗口              | heap, QuickSelect(本次的QS算法写的很完美，囊括了二分与快排，好好看看！) |
+| 347  | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements) |            | √         | √            |                                  |                                          |
+| 150  | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) |            | √         |              | 比较简单的四则运算问题（难的是按照human形式输入）      |                                          |
+| 341  | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator) |            | √`        |              | Medium活生生给我做成了Hard。。不过确实有trick   |                                          |
+|      |                                          |            |           |              |                                  |                                          |
+|      |                                          |            |           |              |                                  |                                          |
 
 
 
@@ -214,6 +214,7 @@ None
 | ---- | ---------------------------------------- | ---------- | --------- | ------------ | --------------- |
 | 200  | [Number of Islands](https://leetcode.com/problems/number-of-islands) |            | √         | 不做           | DFS计算连通分量数      |
 | 329  | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix) | Hard       | √         | √            | DFS+cache剪枝，多看看 |
+
 
 
 ### Graph
@@ -323,7 +324,7 @@ Q39 Combination Sum 的r1 r2 两种解法可以多琢磨琢磨
 
 ### Design
 
-| No   | Title                                    | Difficulty | Completed | Comment |
-| ---- | ---------------------------------------- | ---------- | --------- | ------- |
-| 146  | [LRU Cache](https://leetcode.com/problems/lru-cache) | Hard       | √         |         |
-|      |                                          |            |           |         |
+| No   | Title                                    | Difficulty | Completed | Completed-R2 | Comment | Comment-R2 |
+| ---- | ---------------------------------------- | ---------- | --------- | ------------ | ------- | ---------- |
+| 146  | [LRU Cache](https://leetcode.com/problems/lru-cache) | Hard       | √         | √            |         |            |
+|      |                                          |            |           |              |         |            |
