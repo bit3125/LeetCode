@@ -71,14 +71,14 @@
 
 ### Binary Search
 
-| No   | Title                                    | Difficulty | Completed | Comment                           |
-| ---- | ---------------------------------------- | ---------- | --------- | --------------------------------- |
-| 33   | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) |            | √         | 可基于剑指offer No11                   |
-| 34   | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) |            | √         |                                   |
-| 300  | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) |            | √,  `TODO | 实现了O(n^2)复杂度，O(nlogn)复杂度尚未理解      |
-| 162  | [Find Peak Element](https://leetcode.com/problems/find-peak-element) |            | √,√`      | 没想到用Binary Search。此题的BS的变形思路要好好揣摩 |
-|      |                                          |            |           |                                   |
-|      |                                          |            |           |                                   |
+| No   | Title                                    | Difficulty | Completed | Completed-R2 | Comment                           |
+| ---- | ---------------------------------------- | ---------- | --------- | ------------ | --------------------------------- |
+| 33   | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) |            | √         |              | 可基于剑指offer No11                   |
+| 34   | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) |            | √         |              |                                   |
+| 300  | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) |            | √,  `TODO | √,  `TODO    | 实现了O(n^2)复杂度，O(nlogn)复杂度尚未理解      |
+| 162  | [Find Peak Element](https://leetcode.com/problems/find-peak-element) |            | √,√`      | TODO         | 没想到用Binary Search。此题的BS的变形思路要好好揣摩 |
+|      |                                          |            |           |              |                                   |
+|      |                                          |            |           |              |                                   |
 
 
 
@@ -200,11 +200,11 @@ None
 
 ### Trie
 
-| No   | Title                        | Difficulty | Completed | Comment                                  |
-| ---- | ---------------------------- | ---------- | --------- | ---------------------------------------- |
-| 208  | Implement Trie (Prefix Tree) |            | √         | Trie Tree 基础实现                           |
-| 212  | Word Search II               | Hard       | √         | Trie+DFS backtracking<br> 似乎利用startWith操作能够继续剪枝 ，尚未研究//TODO |
-|      |                              |            |           |                                          |
+| No   | Title                        | Difficulty | Completed | Completed-R2 | Comment                                  |
+| ---- | ---------------------------- | ---------- | --------- | ------------ | ---------------------------------------- |
+| 208  | Implement Trie (Prefix Tree) |            | √         | √            | Trie Tree 基础实现                           |
+| 212  | Word Search II               | Hard       | √         | √            | Trie+DFS backtracking<br> 似乎利用startWith操作能够继续剪枝 ，尚未研究//TODO |
+|      |                              |            |           |              |                                          |
 
 
 
@@ -230,7 +230,7 @@ None
 | 78          | [Subsets](https://leetcode.com/problems/subsets) |            | √         | √            | 组合，使用boolean标记数组，无回溯。                    |                                          |
 | 39          | [Combination Sum](https://leetcode.com/problems/combination-sum) |            | √         | √            | 无回溯。但是应该可用。r1在递归调用的基础上使用for来辅助穷举，一定程度上对递归栈深度剪枝 | r2使用的是类似状态机的搜索算法，用了backtracking，没有使用r1中的for来辅助，但时间开销近似 |
 | 46          | [Permutations](https://leetcode.com/problems/permutations) |            | √         | √            |                                          |                                          |
-| 31          | [Next Permutation](https://leetcode.com/problems/next-permutation) |            | √         | TODO         | 无回溯。                                     |                                          |
+| 31          | [Next Permutation](https://leetcode.com/problems/next-permutation) |            | √         | √            | 无回溯。                                     |                                          |
 | 79          | [Word Search](https://leetcode.com/problems/word-search) |            | √         | √            | 本质是backtracking-DFS。几乎两年没写了20min一遍过，太强了（啪啪啪） |                                          |
 | 131         | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) |            | √         | √            | 回文串2d-DP(Q005)+枚举搜索backtracking          |                                          |
 |             |                                          |            |           |              |                                          |                                          |
@@ -254,28 +254,40 @@ Q39 Combination Sum 的r1 r2 两种解法可以多琢磨琢磨
 | 70   | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | Easy       | √         | 不做           |                                          |
 | 62   | [Unique Paths](https://leetcode.com/problems/unique-paths) |            | √         | √            |                                          |
 | 279  | [Perfect Squares](https://leetcode.com/problems/perfect-squares) |            | √         | √,           | On^2非最优                                  |
-| 139  | [Word Break](https://leetcode.com/problems/word-break) |            | √`        |              | 穷举与DP复杂度一样结果前者TLE后者AC                    |
+| 139  | [Word Break](https://leetcode.com/problems/word-break) |            | √`        | √            | 穷举与DP复杂度一样结果前者TLE后者AC                    |
 | 312  | [Burst Balloons](https://leetcode.com/problems/burst-balloons) | Hard       |           |              |                                          |
-| 322  | [Coin Change](https://leetcode.com/problems/coin-change) |            | √         |              | 贪心递归（与Q39同法）是错误的，该用完全背包（目标钱数就是恰好容量，求最小价值） |
+| 322  | [Coin Change](https://leetcode.com/problems/coin-change) |            | √         | //todo       | 贪心递归（与Q39同法）是错误的，该用完全背包（目标钱数就是恰好容量，求最小价值） |
 |      |                                          |            |           |              |                                          |
 | 二维   |                                          |            |           |              |                                          |
-| 64   | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) |            | √         |              |                                          |
-| 72   | [Edit Distance](https://leetcode.com/problems/edit-distance) | Hard       | √`        |              | 比较典型的题型，DP方向从大到小会方便很多，边界条件是个难点           |
-| 221  | [Maximal Square](https://leetcode.com/problems/maximal-square) |            | √`        |              |                                          |
+| 64   | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) |            | √         | √            |                                          |
+| 72   | [Edit Distance](https://leetcode.com/problems/edit-distance) | Hard       | √`        | √            | 比较典型的题型，DP方向从大到小会方便很多，边界条件是个难点           |
+| 221  | [Maximal Square](https://leetcode.com/problems/maximal-square) |            | √`        | √            |                                          |
 | 85   | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle) | Hard       | TODO      |              |                                          |
-|      |                                          |            |           |              |                                          |
+| 1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence) |            |           | √            | LCS，与EditDistance几乎一毛一样                  |
 | 化简   |                                          |            |           |              |                                          |
-| 198  | [House Robber](https://leetcode.com/problems/house-robber) | Easy       | √         |              |                                          |
+| 198  | [House Robber](https://leetcode.com/problems/house-robber) | Easy       | √         | √            |                                          |
 | 10   | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard       |           |              |                                          |
-| 91   | [Decode Ways](https://leetcode.com/problems/decode-ways) |            | √         |              | 边界挺麻烦的                                   |
+| 91   | [Decode Ways](https://leetcode.com/problems/decode-ways) |            | √         | √            | 边界挺麻烦的                                   |
 |      |                                          |            |           |              |                                          |
 | 其他   |                                          |            |           |              |                                          |
-| 121  | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) |            | √         |              |                                          |
+| 121  | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) |            | √         | 不做           |                                          |
 | 309  | [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown) |            | ?         |              |                                          |
-| 152  | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) |            | √         |              |                                          |
+| 152  | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) |            | √         | √            |                                          |
 |      |                                          |            |           |              |                                          |
 
 注：53题被大佬错分到Array，明明是DP 才对- -。还有121,309,152也是
+
+>几个典型dp问题的状态定义总结：
+>
+>- 最长递增子数组，dp[i]，**以i结尾**的最长递增子数组（局部含义）
+>- 最长递增子序列，dp[i]，**以i结尾**的最长递增子序列（局部含义）
+>- 最长公共子序列，dp[i][j]，两个子数组 [0, i], [0, j] 的最长公共子序列（全局含义）
+>- 最小编辑距离，dp[i][j]，两个子串 [0, i], [0, j] 的最小编辑距离（全局含义）
+
+- 最长递增子数组，dp[i]，以i结尾的最长递增子数组
+- 最长递增子序列，dp[i]，以i结尾的最长递增子序列
+- 最长公共子序列，dp[i][j]，两个子数组 [0, i], [0, j] 的最长公共子序列
+- 最小编辑距离，dp[i][j]，两个子串 [0, i], [0, j] 的最小编辑距离
 
 
 

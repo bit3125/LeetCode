@@ -12,7 +12,7 @@ public class Q083RemoveDuplicatesfromSortedList {
         tmp.next = head;
         head = tmp;
 
-        ListNode p = head.next, pp;
+        ListNode p = head.next;
         while (p != null) {
             while (p != null && p.next!=null && p.next.val==p.val) {
                 removeNext(p);
