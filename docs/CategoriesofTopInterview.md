@@ -64,7 +64,7 @@
 | 283      | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy       | √         | √            | HashSort                                 |                                          |
 | 88       | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array) | Easy       | √         | 不做           | 剑指offer原题。注意题目给的条件必有其用                   |                                          |
 | 324      | [Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii) |            | √`        |              | 感觉比些Hard还难。写了3个Solutions，重要一个技巧点是：上下分层模型+填充方向，3个Solutions都基于此。最佳解法为QuickSelect+3Partition+VirtualIndex（公式只能死记）。 |                                          |
-| 315      | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | Hard       | √         |              | 类似于Reverse Pairs，使用merge others.sort 的思想。这里自己使用了一个int[3]结构来重构数据，完成后要做一次快排。discussion里有使用idx mapping技术的，可以看一下 |                                          |
+| 315      | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self) | Hard       | √         |              | 类似于Reverse Pairs，使用merge others.algos.sort 的思想。这里自己使用了一个int[3]结构来重构数据，完成后要做一次快排。discussion里有使用idx mapping技术的，可以看一下 |                                          |
 
 
 
@@ -281,13 +281,9 @@ Q39 Combination Sum 的r1 r2 两种解法可以多琢磨琢磨
 >
 >- 最长递增子数组，dp[i]，**以i结尾**的最长递增子数组（局部含义）
 >- 最长递增子序列，dp[i]，**以i结尾**的最长递增子序列（局部含义）
->- 最长公共子序列，dp[i][j]，两个子数组 [0, i], [0, j] 的最长公共子序列（全局含义）
->- 最小编辑距离，dp[i][j]，两个子串 [0, i], [0, j] 的最小编辑距离（全局含义）
+>- 最长公共子序列，dp[i].[j]，两个子数组 [0, i], [0, j] 的最长公共子序列（全局含义）
+>- 最小编辑距离，dp[i].[j]，两个子串 [0, i], [0, j] 的最小编辑距离（全局含义）
 
-- 最长递增子数组，dp[i]，以i结尾的最长递增子数组
-- 最长递增子序列，dp[i]，以i结尾的最长递增子序列
-- 最长公共子序列，dp[i][j]，两个子数组 [0, i], [0, j] 的最长公共子序列
-- 最小编辑距离，dp[i][j]，两个子串 [0, i], [0, j] 的最小编辑距离
 
 
 

@@ -17,7 +17,7 @@ public class Q475Heaters_Solution2 {
     	
     	int front, rear, mid;
     	int maxDis = Integer.MIN_VALUE; 
-//    	Arrays.others.sort(houses); // house不需要排序
+//    	Arrays.others.algos.sort(houses); // house不需要排序
     	Arrays.sort(heaters);
     	
     	// 使用双子列类二分查找

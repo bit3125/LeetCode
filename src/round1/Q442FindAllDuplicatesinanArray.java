@@ -13,7 +13,7 @@ public class Q442FindAllDuplicatesinanArray {
     	if (nums==null || nums.length==0)
         	return result;
         	
-    	//others.sort
+    	//others.algos.sort
     	int curNum, tmp;
     	for (int i=0;i<nums.length;){
     		curNum = nums[i];

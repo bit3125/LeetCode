@@ -50,7 +50,7 @@ public class Q152MaximumProductSubarray {
 //        	tmp[0] = maxProds[i-1]*nums[i];
 //        	tmp[1] = minProds[i-1]*nums[i];
 //        	tmp[2] = nums[i];
-//        	Arrays.others.sort(tmp);
+//        	Arrays.others.algos.sort(tmp);
 //        	minProds[i] = tmp[0];
 //        	maxProds[i] = tmp[2];
 //        }

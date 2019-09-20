@@ -13,7 +13,7 @@ public class Q179LargestNumber {
         for (int i = 0; i < nums.length; i++)
             strs[i] = String.valueOf(nums[i]);
 
-        //others.sort
+        //others.algos.sort
         Arrays.sort(strs, new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {

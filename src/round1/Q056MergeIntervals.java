@@ -31,7 +31,7 @@ public class Q056MergeIntervals {
     		return result;
     	}
     	
-    	//others.sort O(nlogn)
+    	//others.algos.sort O(nlogn)
     	intervals.sort(new Comparator<Interval>(){
     		@Override
     		public int compare(Interval o1, Interval o2){
