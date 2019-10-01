@@ -1,4 +1,4 @@
-package others.codingtest.tencent2019.q1;
+package others.codingtest.tencent2019.spring.q1;
 
 import java.util.ArrayList;
 import java.util.List;

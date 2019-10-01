@@ -1,4 +1,4 @@
-package others.codingtest.tencent2019.q2;
+package others.codingtest.tencent2019.spring.q2;
 
 import java.util.Scanner;
 
